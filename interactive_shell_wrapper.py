@@ -42,7 +42,7 @@ class InteractiveShellWrapper:
                 output_queue.put(line.rstrip("\n"))
         finally:
             stream.close()
-
+           # made by modelguyzz
     def execute_command(self, command: str):
         """Send a command to the shell."""
         if self.process.stdin:
@@ -71,7 +71,7 @@ class InteractiveShellWrapper:
                 self.process.wait(timeout=5)
             except subprocess.TimeoutExpired:
                 self.process.kill()
-#code made by modelguyzz
+# made by modelguyzz
 
 # Example usage
 if __name__ == "__main__":
