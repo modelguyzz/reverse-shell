@@ -6,10 +6,10 @@ import base64
 def obfuscate_script(source_code: str) -> str:
     """
     Obfuscates Python source code with:
-    - Variable and function renaming
-    - String encryption (Base64)
-    - Dead code injection
-    - Polymorphic output (randomized each call)
+    Variable and function renaming
+    String encryption (Base64)
+    Dead code injection
+    Polymorphic output (randomized each call)
     """
     # Helper: Generate random variable/function names
     def random_name(length=6):
