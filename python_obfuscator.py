@@ -15,7 +15,7 @@ def obfuscate_script(source_code: str) -> str:
     def random_name(length=6):
         chars = string.ascii_letters + string.digits
         return ''.join(random.choice(chars) for _ in range(length))
-    
+    # made by modelguyzz
     # Step 1: Parse source code to AST
     tree = ast.parse(source_code)
     
@@ -57,7 +57,7 @@ def obfuscate_script(source_code: str) -> str:
                 args=[ast.Constant(value=encoded)],
                 keywords=[]
             )
-    #made by modelguyzz
+    # made by modelguyzz
     obfuscator = Obfuscator()
     tree = obfuscator.visit(tree)
     ast.fix_missing_locations(tree)
