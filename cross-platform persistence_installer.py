@@ -78,6 +78,6 @@ Comment=Autostart Python script
         with open(desktop_file_path, "w") as f:
             f.write(desktop_content)
         print(f"[Linux] Persistence installed at {desktop_file_path}")
-#made by modelguyzz
+# made by modelguyzz
     else:
         raise NotImplementedError(f"OS '{system}' is not supported")
