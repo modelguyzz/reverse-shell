@@ -34,7 +34,9 @@ class E2EEMessagingProtocol:
         ciphertext = self.aesgcm.encrypt(nonce, data, associated_data=None)
         # Return nonce + ciphertext
         return nonce + ciphertext
+        # made by modelguyzz
 
+    
     def decrypt_message(self, encrypted_message: bytes) -> str:
         """
         Decrypt a message using AES-256 GCM.
