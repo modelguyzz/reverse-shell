@@ -18,7 +18,7 @@ def execute_in_memory(script_code: str, injected_globals: Optional[Dict] = None)
     original_stderr = sys.stderr
     sys.stdout = stdout_buffer
     sys.stderr = stderr_buffer
-#made by modelguyzz
+# made by modelguyzz
     try:
         # Execute the code
         exec(script_code, globals_dict, locals_dict)
